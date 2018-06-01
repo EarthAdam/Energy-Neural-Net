@@ -13,7 +13,7 @@ A neural network written in Python, consisting of a single neuron that uses back
 ![Annual Power Consumption](https://github.com/OhioAdam/Energy-Neural-Net/blob/master/img/Power%20Consumption.png)
 
 ## Data Organization
-![Inputs and Outputs](img/IO.png)]
+![Inputs and Outputs](https://github.com/OhioAdam/Energy-Neural-Net/blob/master/img/IO.png)
 Data was organized using Excel to match hourly datasets together. Additional if statements and equations in excel read the time/date ID for every reading and break those into discrete variables for neural net to more easily train on influencing variables (i.e. hour = 1 or 12 rather than 1/1/2017  1:00:00 AM). Also added equations to match date in date/time ID to 1 or 0 values to make it more clear whether class was in scession, on break, or in the middle of finals in order to determine how those variables influence the energy usage.
 
 ## Data input
