@@ -9,8 +9,8 @@ A neural network written in Python, consisting of a single neuron that uses back
 ### [OARDC](http://www.oardc.ohio-state.edu/weather1/stationinfo.asp?id=14) Hourly Local Weather History
 ### The Ohio State University [Academic Calendar](https://registrar.osu.edu/staff/bigcal.asp)
 ### (Provided) Hourly Electrical and Steam consumption for 3 campus buildings
-![Annual Steam Consumption](img/Steam Consumption.png)
-![Annual Power Consumption](img/Power Consumption.png)]
+![Annual Steam Consumption](https://github.com/OhioAdam/Energy-Neural-Net/blob/master/img/Steam%20Consumption.png)
+![Annual Power Consumption](https://github.com/OhioAdam/Energy-Neural-Net/blob/master/img/Power%20Consumption.png)
 
 ## Data Organization
 ![Inputs and Outputs](img/IO.png)]
