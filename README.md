@@ -1,14 +1,14 @@
 # Energy Neural Network
-A neural network written in Python, consisting of a single neuron that uses back propagation to learn the influence on weather and occupancy variables on energy consumption.
+A neural network written in Python, consisting of a single neuron that uses back propagation to learn the influence on weather and occupancy variables on energy consumption. Original code is from Milo Harper's ["Simple Neural Network"](https://github.com/miloharper/simple-neural-network) project that shows how 3 input variables influence a single node.
 
 ### Dependencies
 1. numpy
 2. xlrd
 
 ## Data Sources
-### [OARDC](http://www.oardc.ohio-state.edu/weather1/stationinfo.asp?id=14) Hourly Local Weather History
-### The Ohio State University [Academic Calendar](https://registrar.osu.edu/staff/bigcal.asp)
-### (Provided) Hourly Electrical and Steam consumption for 3 campus buildings
+### 1. [OARDC](http://www.oardc.ohio-state.edu/weather1/stationinfo.asp?id=14) Hourly Local Weather History
+### 2. The Ohio State University [Academic Calendar](https://registrar.osu.edu/staff/bigcal.asp)
+### 3. (Provided) Hourly Electrical and Steam consumption for 3 campus buildings
 
 ## Data Organization
 ![Inputs and Outputs](https://github.com/OhioAdam/Energy-Neural-Net/blob/master/img/IO.png)
