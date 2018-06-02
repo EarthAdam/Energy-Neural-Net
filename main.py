@@ -8,7 +8,8 @@ curr_row = 1
 
 #creates an array to store all the rows
 row_array = np.array([])
-out_array = np.array([])
+out_array1 = np.array([])
+out_array2 = np.array([])
 row_list = np.array([])
 #print(worksheet.row(1))
 print(len(worksheet.row(1)))
@@ -22,15 +23,22 @@ while curr_row < num_rows:
     row_array = np.concatenate([row_list,row_list],axis=0)
     curr_row += 1
 
-print(row_array)
+# print(row_array)
 row_array = np.resize(row_array,(8646,16))
 row_array = np.array(row_array).T
+print(row_array)
 
-out_array = worksheet.col(16)[0].value
-out_array.pop(0)
-out_array = np.resize(out_array,(8646,1))
+out_array1 = worksheet.col(16)
+out_array1.pop(0)
+for k in range(len(out_array1)):
+    element2 = out_array1[k].value
+    out_array2 = np.append(out_array2,element2)
+
+print(out_array2)
+out_array2 = np.resize(out_array2,(8646,1))
+out_array2 = out_array2.astype(float)
 print(np.shape(row_array))
-print(np.shape(out_array))
+print(np.shape(out_array2))
 
 #Column 16 = Beginning of Electrical Consumption
 
@@ -94,7 +102,7 @@ if __name__ == "__main__":
     # The training set. We have 4 examples, each consisting of 3 input values
     # and 1 output value.
     training_set_inputs = row_array
-    training_set_outputs = out_array
+    training_set_outputs = out_array2
 
     # Train the neural network using a training set.
     # Do it 10,000 times and make small adjustments each time.
