@@ -36,7 +36,6 @@ for k in range(len(out_array1)):
 
 print(out_array2)
 out_array2 = np.resize(out_array2,(8646,1))
-out_array2 = out_array2.astype(float)
 print(np.shape(row_array))
 print(np.shape(out_array2))
 
