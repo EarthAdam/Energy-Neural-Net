@@ -106,4 +106,4 @@ if __name__ == "__main__":
 
     # Test the neural network with a new situation.
     print("Considering new situation [1,0,0,3,86,9,0,55.1,0.22,95.3,54.59,54.29,3.219043,22.72,59.21,0.006] -> ?: ")
-    print(neural_network.think(array([1,0,0,3,86,9,0,55.1,0.22,95.3,54.59,54.29,3.219043,22.72,59.21,0.006])))
+    print(array([1,0,0,3,86,9,0,55.1,0.22,95.3,54.59,54.29,3.219043,22.72,59.21,0.006])*neural_network.synaptic_weights.T)
