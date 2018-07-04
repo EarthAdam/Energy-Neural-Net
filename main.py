@@ -25,7 +25,7 @@ while curr_row < num_rows:
 
 # print(row_array)
 row_array = np.resize(row_array,(8646,16))
-row_array = np.array(row_array).T
+# row_array = np.array(row_array).T
 
 #Column 16 = Beginning of Electrical Consumption
 out_array = worksheet.col(16)
@@ -43,10 +43,9 @@ class NeuralNetwork():
         # every time the program runs.
         random.seed(1)
 
-        # We model a single neuron, with 3 input connections and 1 output connection.
-        # We assign random weights to a 3 x 1 matrix, with values in the range -1 to 1
-        # and mean 0.
-        self.synaptic_weights = 2 * random.random((8646,1)) - 1
+        # We model a single neuron, with 16 input connections and 1 output connection.
+        # We assign random weights to a 16 x 1 matrix, with values loosely bounded
+        self.synaptic_weights = 2 * random.random((16,1)) - 1
 
     # The Sigmoid function, which describes an S shaped curve.
     # We pass the weighted sum of the inputs through this function to
@@ -106,5 +105,5 @@ if __name__ == "__main__":
     print(neural_network.synaptic_weights)
 
     # Test the neural network with a new situation.
-    print("Considering new situation [1, 0, 0] -> ?: ")
-    print(neural_network.think(array([1, 0, 0])))
+    print("Considering new situation [1,0,0,3,86,9,0,55.1,0.22,95.3,54.59,54.29,3.219043,22.72,59.21,0.006] -> ?: ")
+    print(neural_network.think(array([1,0,0,3,86,9,0,55.1,0.22,95.3,54.59,54.29,3.219043,22.72,59.21,0.006])))
